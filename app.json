@@ -1,9 +1,9 @@
 {
-  "name": "Chatwoot",
-  "description": "Chatwoot is a customer support tool for instant messaging channels",
-  "website": "https://www.chatwoot.com/",
+  "name": "Chilling.com",
+  "description": "Chilling.com is a customer support tool for instant messaging channels",
+  "website": "https://www.chilling.com/",
   "repository": "https://github.com/chatwoot/chatwoot",
-  "logo": "https://app.chatwoot.com/brand-assets/logo_thumbnail.svg",
+  "logo": "https://app.chilling.com/brand-assets/logo_thumbnail.svg",
   "keywords": [
     "live chat",
     "customer support",
@@ -30,7 +30,7 @@
       "value": "https://CHANGE.herokuapp.com"
     },
     "INSTALLATION_ENV": {
-      "description": "Installation method used for Chatwoot.",
+      "description": "Installation method used for Chilling.",
       "value": "heroku"
     },
     "REDIS_OPENSSL_VERIFY_MODE":{
