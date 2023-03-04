@@ -1,15 +1,15 @@
 swagger: "2.0"
 info:
-  description: This is the API documentation for Chatwoot server.
+  description: This is the API documentation for chilling.com server.
   version: 1.0.0
-  title: Chatwoot
-  termsOfService:	https://www.chatwoot.com/terms-of-service/
+  title: chilling.com
+  termsOfService:	https://www.chilling.com/terms-of-service/
   contact:
-    email: hello@chatwoot.com
+    email: hello@chilling.com
   license:
     name: MIT License
     url: https://opensource.org/licenses/MIT
-host: app.chatwoot.com
+host: app.chilling.com
 basePath: /
 schemes:
   - https

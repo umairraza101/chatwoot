@@ -1,21 +1,21 @@
 # if you dont specify locked attribute, the default value will be true
 # which means the particular config will be locked
 - name: INSTALLATION_NAME
-  value: 'Chilling.com'
+  value: 'chilling.com'
 - name: LOGO_THUMBNAIL
   value: '/brand-assets/logo_thumbnail.svg'
 - name: LOGO
   value: '/brand-assets/logo.svg'
 - name: BRAND_URL
-  value: 'https://www.Chilling.com'
+  value: 'https://www.chilling.com'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.Chilling.com'
+  value: 'https://www.chilling.com'
 - name: BRAND_NAME
   value: 'Chatwoot'
 - name: TERMS_URL
-  value: 'https://www.Chilling.com/terms-of-service'
+  value: 'https://www.chilling.com/terms-of-service'
 - name: PRIVACY_URL
-  value: 'https://www.Chilling.com/privacy-policy'
+  value: 'https://www.chilling.com/privacy-policy'
 - name: DISPLAY_MANIFEST
   value: true
 - name: MAILER_INBOUND_EMAIL_DOMAIN

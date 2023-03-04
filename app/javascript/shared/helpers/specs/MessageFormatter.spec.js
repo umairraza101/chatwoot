@@ -4,16 +4,16 @@ describe('#MessageFormatter', () => {
   describe('content with links', () => {
     it('should format correctly', () => {
       const message =
-        'Chilling is an opensource tool. [Chilling](https://www.chilling.com)';
+        'chilling.com is an opensource tool. [Chilling](https://www.chilling.com)';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>Chilling is an opensource tool. <a href="https://www.chilling.com" class="link" rel="noreferrer noopener nofollow" target="_blank">Chilling</a></p>'
+        '<p>chilling.com is an opensource tool. <a href="https://www.chilling.com" class="link" rel="noreferrer noopener nofollow" target="_blank">Chilling</a></p>'
       );
     });
     it('should format correctly', () => {
       const message =
-        'Chilling is an opensource tool. https://www.Chilling.com';
+        'chilling.com is an opensource tool. https://www.chilling.com';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>Chilling is an opensource tool. <a href="https://www.Chilling.com" class="link" rel="noreferrer noopener nofollow" target="_blank">https://www.chatwoot.com</a></p>'
+        '<p>chilling.com is an opensource tool. <a href="https://www.chilling.com" class="link" rel="noreferrer noopener nofollow" target="_blank">https://www.chatwoot.com</a></p>'
       );
     });
   });
@@ -30,7 +30,7 @@ describe('#MessageFormatter', () => {
 
   describe('tweets', () => {
     it('should return the same string if not tags or @mentions', () => {
-      const message = 'Chilling is an opensource tool';
+      const message = 'chilling.com is an opensource tool';
       expect(new MessageFormatter(message).formattedMessage).toMatch(message);
     });
 
