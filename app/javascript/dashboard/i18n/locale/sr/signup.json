@@ -36,7 +36,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Registracija je uspešna",
-      "ERROR_MESSAGE": "Nije moguće se povezati sa Woot serverom, pokušajte ponovo kasnije"
+      "ERROR_MESSAGE": "Nije moguće se povezati sa chilling.com ing.com serverom, pokušajte ponovo kasnije"
     },
     "SUBMIT": "Create account",
     "HAVE_AN_ACCOUNT": "Već imate nalog?"

@@ -11,7 +11,7 @@
     },
     "API": {
       "SUCCESS_MESSAGE": "Pierakstīšanās Veiksmīga",
-      "ERROR_MESSAGE": "Nevar izveidot savienojumu ar Woot serveri. Lūdzu, vēlāk pamēģiniet vēlreiz",
+      "ERROR_MESSAGE": "Nevar izveidot savienojumu ar chilling.com serveri. Lūdzu, vēlāk pamēģiniet vēlreiz",
       "UNAUTH": "Nepareizs lietotājvārds/parole. Lūdzu mēģiniet vēlreiz"
     },
     "OAUTH": {

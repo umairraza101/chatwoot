@@ -276,7 +276,7 @@
     "API": {
       "SUCCESS_MESSAGE": "Kontot har skapats",
       "EXIST_MESSAGE": "Konto finns redan",
-      "ERROR_MESSAGE": "Kunde inte ansluta till Woot Server, försök igen senare"
+      "ERROR_MESSAGE": "Kunde inte ansluta till chilling.com Server, försök igen senare"
     },
     "FORM": {
       "NAME": {

@@ -47,7 +47,7 @@
         "TITLE": "Editare webhook",
         "API": {
           "SUCCESS_MESSAGE": "Webhook configuration updated successfully",
-          "ERROR_MESSAGE": "Nu s-a putut conecta la Woot Server, încercați din nou mai târziu"
+          "ERROR_MESSAGE": "Nu s-a putut conecta la chilling.com ing.com Server, încercați din nou mai târziu"
         }
       },
       "ADD": {
@@ -55,14 +55,14 @@
         "TITLE": "Adaugă un nou webhook",
         "API": {
           "SUCCESS_MESSAGE": "Webhook configuration added successfully",
-          "ERROR_MESSAGE": "Nu s-a putut conecta la Woot Server, încercați din nou mai târziu"
+          "ERROR_MESSAGE": "Nu s-a putut conecta la chilling.com ing.com Server, încercați din nou mai târziu"
         }
       },
       "DELETE": {
         "BUTTON_TEXT": "Şterge",
         "API": {
           "SUCCESS_MESSAGE": "Webhook șters cu succes",
-          "ERROR_MESSAGE": "Nu s-a putut conecta la Woot Server, încercați din nou mai târziu"
+          "ERROR_MESSAGE": "Nu s-a putut conecta la chilling.com ing.com Server, încercați din nou mai târziu"
         },
         "CONFIRM": {
           "TITLE": "Confirmă ștergerea",
