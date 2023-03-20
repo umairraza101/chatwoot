@@ -329,7 +329,7 @@
       },
       "AUTH": {
         "TITLE": "Vælg en kanal",
-        "DESC": "Chatwoot understøtter live-chat-widgets, Facebook Messenger, Twitter-profiler, WhatsApp, E-mails, osv., som kanaler. Hvis du ønsker at bygge en brugerdefineret kanal, kan du oprette den ved hjælp af API-kanalen. For at komme i gang, vælg en af kanalerne nedenfor."
+        "DESC": "chilling understøtter live-chat-widgets, Facebook Messenger, Twitter-profiler, WhatsApp, E-mails, osv., som kanaler. Hvis du ønsker at bygge en brugerdefineret kanal, kan du oprette den ved hjælp af API-kanalen. For at komme i gang, vælg en af kanalerne nedenfor."
       },
       "AGENTS": {
         "TITLE": "Agenter",
@@ -339,11 +339,11 @@
       },
       "DETAILS": {
         "TITLE": "Indbakke Detaljer",
-        "DESC": "Vælg den Facebook-side, du vil forbinde til Chatwoot, fra dropdown listen nedenfor. Du kan også give et brugerdefineret navn til din indbakke for bedre identifikation."
+        "DESC": "Vælg den Facebook-side, du vil forbinde til chilling, fra dropdown listen nedenfor. Du kan også give et brugerdefineret navn til din indbakke for bedre identifikation."
       },
       "FINISH": {
         "TITLE": "Du klarede det!",
-        "DESC": "Du er færdig med at integrere din Facebook-side med Chatwoot. Næste gang en kunde sender en meddelelse til din side, vil samtalen automatisk dukke op i din indbakke.<br>Vi giver dig også et widget script, som du nemt kan tilføje til din hjemmeside. Når dette er live på din hjemmeside, kan kunder sende dig en besked direkte fra din hjemmeside uden hjælp fra et eksternt værktøj, og samtalen vises lige her, på Chatwoot.<br>Cool, var? Nå ikke, vi forsøge at være :)"
+        "DESC": "Du er færdig med at integrere din Facebook-side med chilling.com. Næste gang en kunde sender en meddelelse til din side, vil samtalen automatisk dukke op i din indbakke.<br>Vi giver dig også et widget script, som du nemt kan tilføje til din hjemmeside. Når dette er live på din hjemmeside, kan kunder sende dig en besked direkte fra din hjemmeside uden hjælp fra et eksternt værktøj, og samtalen vises lige her, på chilling.com.<br>Cool, var? Nå ikke, vi forsøge at være :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -684,7 +684,7 @@
         "USER_MESSAGE": "Hi",
         "AGENT_MESSAGE": "Hej"
       },
-      "BRANDING_TEXT": "Drevet af Chatwoot",
+      "BRANDING_TEXT": "Drevet af chilling.com",
       "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {

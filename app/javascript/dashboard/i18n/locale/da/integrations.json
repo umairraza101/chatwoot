@@ -75,7 +75,7 @@
     "SLACK": {
       "HELP_TEXT": {
         "TITLE": "Brug Slack Integration",
-        "BODY": "<br/><p>chilling vil nu synkronisere alle indgående samtaler ind i <b><i>kundesamtaler</i></b> kanalen i din slack arbejdsplads.</p><p>Svar på en samtaletråd i <b><i>kunde-samtaler</i></b> slack kanal vil skabe et svar tilbage til kunden gennem chatwoot.</p><p>Start svarene med <b><i>note:</i></b> for at oprette private noter i stedet for svar.</p><p>Hvis replikatoren på slack har en agentprofil i chatwoot under samme e-mail, vil svarene blive tilknyttet i overensstemmelse hermed.</p><p>Når replikatoren ikke har en tilknyttet agentprofil, vil svarene blive fremsat fra bot-profilen.</p>"
+        "BODY": "<br/><p>chilling vil nu synkronisere alle indgående samtaler ind i <b><i>kundesamtaler</i></b> kanalen i din slack arbejdsplads.</p><p>Svar på en samtaletråd i <b><i>kunde-samtaler</i></b> slack kanal vil skabe et svar tilbage til kunden gennem chilling.com.</p><p>Start svarene med <b><i>note:</i></b> for at oprette private noter i stedet for svar.</p><p>Hvis replikatoren på slack har en agentprofil i chilling under samme e-mail, vil svarene blive tilknyttet i overensstemmelse hermed.</p><p>Når replikatoren ikke har en tilknyttet agentprofil, vil svarene blive fremsat fra bot-profilen.</p>"
       }
     },
     "DYTE": {

@@ -1,14 +1,15 @@
 <template>
-  <banner
-    v-if="shouldShowBanner"
-    class="update-banner"
-    color-scheme="primary"
-    :banner-message="bannerMessage"
-    href-link="https://github.com/umairraza101/chatwoot/releases"
-    :href-link-text="$t('GENERAL_SETTINGS.LEARN_MORE')"
-    has-close-button
-    @close="dismissUpdateBanner"
-  />
+  <div />
+  <!--  <banner-->
+  <!--    v-if="shouldShowBanner"-->
+  <!--    class="update-banner"-->
+  <!--    color-scheme="primary"-->
+  <!--    :banner-message="bannerMessage"-->
+  <!--    href-link="https://github.com/umairraza101/chatwoot/releases"-->
+  <!--    :href-link-text="$t('GENERAL_SETTINGS.LEARN_MORE')"-->
+  <!--    has-close-button-->
+  <!--    @close="dismissUpdateBanner"-->
+  <!--  />-->
 </template>
 <script>
 import Banner from 'dashboard/components/ui/Banner.vue';
@@ -18,6 +19,7 @@ import adminMixin from 'dashboard/mixins/isAdmin';
 import { hasAnUpdateAvailable } from './versionCheckHelper';
 
 export default {
+  // eslint-disable-next-line vue/no-unused-components
   components: { Banner },
   mixins: [adminMixin],
   props: {
