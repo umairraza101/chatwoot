@@ -133,6 +133,7 @@ ActiveRecord::Schema.define(version: 2023_03_29_112330) do
     t.bigint "associated_article_id"
     t.jsonb "meta", default: {}
     t.string "slug", null: false
+    t.integer "position"
     t.index ["associated_article_id"], name: "index_articles_on_associated_article_id"
     t.index ["author_id"], name: "index_articles_on_author_id"
     t.index ["slug"], name: "index_articles_on_slug", unique: true
@@ -447,6 +448,7 @@ ActiveRecord::Schema.define(version: 2023_03_29_112330) do
     t.datetime "assignee_last_seen_at"
     t.datetime "first_reply_created_at"
     t.index ["account_id", "display_id"], name: "index_conversations_on_account_id_and_display_id", unique: true
+    t.index ["account_id", "inbox_id", "status", "assignee_id"], name: "conv_acid_inbid_stat_asgnid_idx"
     t.index ["account_id"], name: "index_conversations_on_account_id"
     t.index ["assignee_id", "account_id"], name: "index_conversations_on_assignee_id_and_account_id"
     t.index ["campaign_id"], name: "index_conversations_on_campaign_id"
@@ -575,6 +577,7 @@ ActiveRecord::Schema.define(version: 2023_03_29_112330) do
     t.jsonb "auto_assignment_config", default: {}
     t.boolean "lock_to_single_conversation", default: false, null: false
     t.index ["account_id"], name: "index_inboxes_on_account_id"
+    t.index ["channel_id", "channel_type"], name: "index_inboxes_on_channel_id_and_channel_type"
   end
 
   create_table "installation_configs", force: :cascade do |t|
@@ -818,6 +821,7 @@ ActiveRecord::Schema.define(version: 2023_03_29_112330) do
   create_table "tags", id: :serial, force: :cascade do |t|
     t.string "name"
     t.integer "taggings_count", default: 0
+    t.index "lower((name)::text) gin_trgm_ops", name: "tags_name_trgm_idx", using: :gin
     t.index ["name"], name: "index_tags_on_name", unique: true
   end
 

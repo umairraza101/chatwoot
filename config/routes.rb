@@ -263,6 +263,7 @@ Rails.application.routes.draw do
             get :labels
             get :teams
             get :conversations
+            get :conversation_traffic
           end
         end
       end
