@@ -17,7 +17,7 @@ const state = {
 };
 
 const isAValidAppIntegration = integration => {
-  return ['dialogflow', 'dyte', 'google_translate'].includes(integration.id);
+  return ['dialogflow', 'dyte', 'google_translate', 'chatgpt'].includes(integration.id);
 };
 export const getters = {
   getIntegrations($state) {
@@ -92,6 +92,25 @@ export const actions = {
       commit(types.default.SET_INTEGRATIONS_UI_FLAG, { isDeletingHook: false });
     } catch (error) {
       commit(types.default.SET_INTEGRATIONS_UI_FLAG, { isDeletingHook: false });
+      throw new Error(error);
+    }
+  },
+  uploadFileChatGPT: async ({ commit }, params) => {
+    try {
+      const response = await IntegrationsAPI.uploadFile(params);
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  },
+  createGPTHook: async ({ commit }, params) => {
+    commit(types.default.SET_INTEGRATIONS_UI_FLAG, { isCreatingHook: true });
+    try {
+      const response = await IntegrationsAPI.createChatGPT(params);
+      commit(types.default.ADD_INTEGRATION_HOOKS, response.data);
+      commit(types.default.SET_INTEGRATIONS_UI_FLAG, { isCreatingHook: false });
+    } catch (error) {
+      commit(types.default.SET_INTEGRATIONS_UI_FLAG, { isCreatingHook: false });
       throw new Error(error);
     }
   },

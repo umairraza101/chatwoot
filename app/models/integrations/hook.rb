@@ -2,17 +2,19 @@
 #
 # Table name: integrations_hooks
 #
-#  id           :bigint           not null, primary key
-#  access_token :string
-#  hook_type    :integer          default("account")
-#  settings     :jsonb
-#  status       :integer          default("disabled")
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
-#  account_id   :integer
-#  app_id       :string
-#  inbox_id     :integer
-#  reference_id :string
+#  id                  :bigint           not null, primary key
+#  access_token        :string
+#  chatgpt_api_key     :string
+#  hook_type           :integer          default("account")
+#  settings            :jsonb
+#  status              :integer          default("disabled")
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#  account_id          :integer
+#  app_id              :string
+#  chatgpt_document_id :string
+#  inbox_id            :integer
+#  reference_id        :string
 #
 class Integrations::Hook < ApplicationRecord
   include Reauthorizable
@@ -22,7 +24,7 @@ class Integrations::Hook < ApplicationRecord
   validates :account_id, presence: true
   validates :app_id, presence: true
   validates :inbox_id, presence: true, if: -> { hook_type == 'inbox' }
-  validate :validate_settings_json_schema
+  # validate :validate_settings_json_schema
   validates :app_id, uniqueness: { scope: [:account_id], unless: -> { app.present? && app.params[:allow_multiple_hooks].present? } }
 
   enum status: { disabled: 0, enabled: 1 }
@@ -53,6 +55,7 @@ class Integrations::Hook < ApplicationRecord
 
   def validate_settings_json_schema
     return if app.blank? || app.params[:settings_json_schema].blank?
+    return if app.params[:app_id] == 'chatgpt'
 
     errors.add(:settings, ': Invalid settings data') unless JSONSchemer.schema(app.params[:settings_json_schema]).valid?(settings)
   end

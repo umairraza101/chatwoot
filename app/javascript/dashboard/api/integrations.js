@@ -8,6 +8,7 @@ class IntegrationsAPI extends ApiClient {
   }
 
   connectSlack(code) {
+
     return axios.post(`${this.baseUrl()}/integrations/slack`, {
       code: code,
     });
@@ -23,6 +24,21 @@ class IntegrationsAPI extends ApiClient {
 
   deleteHook(hookId) {
     return axios.delete(`${this.baseUrl()}/integrations/hooks/${hookId}`);
+  }
+
+  createChatGPT(hookData) {
+    return axios.post(`${this.baseUrl()}/integrations/hooks/create_chatgpt`, hookData);
+  }
+
+  async uploadFile(params) {
+    const formData = new FormData();
+    formData.append('file', params.file);
+    formData.append('apiKey', params.apiKey);
+      return await axios.post(`${params.openAIUrl}/upload`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
   }
 }
 

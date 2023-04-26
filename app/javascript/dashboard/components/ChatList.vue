@@ -260,6 +260,7 @@ export default {
   },
   computed: {
     ...mapGetters({
+        
       currentChat: 'getSelectedChat',
       currentUser: 'getCurrentUser',
       chatLists: 'getAllConversations',

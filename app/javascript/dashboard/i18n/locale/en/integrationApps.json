@@ -46,7 +46,9 @@
       },
       "API": {
         "SUCCESS_MESSAGE": "Integration hook added successfully",
-        "ERROR_MESSAGE": "Could not connect to Woot Server, Please try again later"
+        "ERROR_MESSAGE": "Could not connect to Woot Server, Please try again later",
+        "API_ERROR_MESSAGE": "Api Key and document are required."
+
       }
     },
     "CONNECT": {
