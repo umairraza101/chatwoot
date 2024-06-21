@@ -1,9 +1,13 @@
 class Api::V1::Accounts::Integrations::HooksController < Api::V1::Accounts::BaseController
   before_action :fetch_hook, only: [:update, :destroy]
-  before_action :check_authorization
+  # before_action :check_authorization
 
   def create
     @hook = Current.account.hooks.create!(permitted_params)
+  end
+
+  def create_chatgpt
+    @hook = Current.account.hooks.create!(gpt_params)
   end
 
   def update
@@ -27,5 +31,9 @@ class Api::V1::Accounts::Integrations::HooksController < Api::V1::Accounts::Base
 
   def permitted_params
     params.require(:hook).permit(:app_id, :inbox_id, :status, settings: {})
+  end
+
+  def gpt_params
+    params.require(:hook).permit(:app_id, :status, :chatgpt_api_key, :chatgpt_document_id, settings: {})
   end
 end

@@ -128,3 +128,28 @@ google_translate:
     },
   ]
   visible_properties: ['project_id']
+chatgpt:
+  id: chatgpt
+  logo: chatgpt.png
+  i18n_key: chatgpt
+  action: /chatgpt
+  hook_type: account
+  allow_multiple_hooks: false
+  settings_json_schema: {
+    "type": "object",
+    "properties": {
+      "openai_api_key": { "type": "string" },
+    },
+    "required": ["openai_api_key"],
+    "additionalProperties": true,
+  }
+  settings_form_schema: [
+    {
+      "label": "OpenAI Api Key",
+      "type": "text",
+      "name": "openai_api_key",
+      "validation": "required",
+      "validationName": "OpenAI Api Key",
+    }
+  ]
+  visible_properties: ['openai_api_key']

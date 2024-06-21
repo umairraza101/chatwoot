@@ -49,6 +49,7 @@
     "logrocket-vuex": "^0.0.3",
     "md5": "^2.3.0",
     "ninja-keys": "^1.1.9",
+    "openai": "^3.2.1",
     "opus-recorder": "^8.0.5",
     "semver": "7.3.5",
     "spinkit": "~1.2.5",

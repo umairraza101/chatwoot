@@ -183,6 +183,9 @@ en:
     google_translate:
       name: "Google Translate"
       description: "Make it easier for agents to translate messages by adding a Google Translate Integration. Google translate helps to identify the language automatically and convert it to the language chosen by the agent/account admin."
+    chatgpt:
+      name: "ChatGPT"
+      description: "Train ChatGPT to answer questions on your behalf using FAQ and documentation. You'll need an OpenAI account to use this application."
   public_portal:
     search:
       search_placeholder: Search for article by title or body...

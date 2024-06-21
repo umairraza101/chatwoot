@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_15_105847) do
+ActiveRecord::Schema.define(version: 2023_03_29_112330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
@@ -601,6 +601,8 @@ ActiveRecord::Schema.define(version: 2023_03_15_105847) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.jsonb "settings", default: {}
+    t.string "chatgpt_api_key"
+    t.string "chatgpt_document_id"
   end
 
   create_table "labels", force: :cascade do |t|
